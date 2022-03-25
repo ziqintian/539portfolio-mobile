@@ -1,0 +1,83 @@
+<!-- home page for my portfolio -->
+<!DOCTYPE html>
+<html lang="en">
+    <!-- head -->
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-R40Y5430FQ"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-R40Y5430FQ');
+        </script>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="css/html5reset.css">
+        <!-- Link to the stylesheet -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lobster" /> -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+        <title>Contact</title>
+    </head>
+
+<!-- All of the visible code in the page belongs in the body tag -->
+    <body>
+        <a class="skip" href="#main">Skip to Main content</a>
+        <header class="header">
+            <img src="images/logo.png" alt="The logo of Skye Tian's portfolio which contains the name of this website" id = "logo">
+            <nav>
+                <ul class="main-nav">
+                    <li><a href = "index.html">Home</a></li>
+                    <li><a href = "photos.html">Photography</a></li>
+				    <li><a href = "music.html">Music</a></li>
+				    <li><a href = "drama.html">Movies and Dramas</a></li>
+                    <li class="active"><a href = "contact.html">Contact Me</a></li>
+                </ul>
+            </nav>
+        </header>
+    <!-- main -->
+    <main>
+        <!-- Action removed for security purposes -->
+        <form>
+            <fieldset>
+                <h1 id="main">Contact Me</h1>
+                <i class="fa fa-user fa-lg"></i>
+                <label for="name_id">Name</label>
+                <input type="text" placeholder="Enter Your Name" id = "name_id" name="name" required>
+
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                <label for="email_id">Email</label>
+                <input type="email" placeholder="Enter Your Email" id = "email_id" name="email" required>
+
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <label for="phone_id">Phone Number</label>
+                <input type="tel" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id = "phone_id" name="phone" required>
+
+                <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                <label for="msg">Leave A Message</label>
+                <textarea placeholder="Enter your message" id = "msg" name="mesg" required></textarea><br>
+
+                <input type="checkbox" checked="checked" name="remember" id = "cBox"> 
+                <label for ="cBox">Remember me</label>
+
+                <input type="submit" value = "KEEP IN TOUCH" id="submit-box">
+            </fieldset>
+        </form>
+    </main>
+
+    <!-- footer -->
+    <div class="cur-footer">
+        <footer>
+            <ul class="social">
+                <li><a href="https://www.instagram.com/zqpixels/">Instagram</a></li>
+                <li><a href="https://github.com/ziqintian">Github</a></li>
+            </ul>
+            <a class="copyright">Skye Tian © 2022</a>
+        </footer>
+    </div>
+    </body>
+</html>
